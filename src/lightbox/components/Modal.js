@@ -21,6 +21,7 @@ const Modal = ({ImageSrc, setImageSrc}) => {
                 alt="lightboxImg"
                 initial={{y: "-100vh"}}
                 animate={{y: 0}}
+                className="display"
                 
             />
         </motion.div>

@@ -19,7 +19,7 @@ const ImageRow = ({Images, setImageSrc}) => {
                             <img 
                                 src={image.src}
                                 alt={índex}
-                                className="display"
+                                className="preview"
                             />
                         </div>
                     </motion.div>
