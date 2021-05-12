@@ -1,13 +1,15 @@
-# React-LightBox
+# React-RipOffGram
 ### Build by KopyTKG
+```
+React-RipOffGram is my copy of instagram
+all recreated by hand
+```
+
+
 ---
 #### Where to find me
 * [github](https://github.com/KopyTKG)
 * [website](https://thekrew.vercel.app/)
-
-#### Released versions
-* [Ver. 1.0.0](#1.0.0)
-<!-- * [Ver. 1.0.1](#1.0.1) -->
 
 ---
 ### Custome build lightbox for react
@@ -16,9 +18,9 @@
 * Few core file / commands are commented in code. 
   * Do not edit them, you can break the functionality.
 
-**Requirements**
+**Used Packages**
 * React-Bootstrap
-* Reactstrap
+* React-Router
 * Framer-motion
   * used for animations
 * Tailwindcss
@@ -38,16 +40,21 @@ all included in **package.json**
 ***
 ## Updates
 
-### [*1.0.0*](https://github.com/KopyTKG/React-LightBox/releases/tag/1.0.0)
+### [*1.0.0*]()
   * working lightbox
   * running on bootstrap
   * Image selection 1d array 
 
-### [*1.0.1*]() **NEW**
+### [*1.0.1*]()
   * lightbox converted to tasilwindcss
   * Image selection has been updated to 2d array
   * theme selection has been added
-
+### [*1.0.2*]() **NEW**
+  * Navbar added
+  * Redirect added to all buttons
+  * Settings dropdown menu added
+  * Tailwind css stable
+  
 ---
 ## **Used packages**
 
