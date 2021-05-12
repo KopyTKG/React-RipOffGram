@@ -5,10 +5,6 @@
 * [github](https://github.com/KopyTKG)
 * [website](https://thekrew.vercel.app/)
 
-#### Released versions
-* [Ver. 1.0.0](https://github.com/KopyTKG/React-LightBox/releases/tag/1.0.0)
-<!-- * [Ver. 1.0.1](#1.0.1) -->
-
 ---
 ### Custome build lightbox for react
 
