@@ -24,8 +24,7 @@ const Modal = ({Theme, ImageSrc, setImageSrc}) => {
         >
             <motion.div className={`background transition 
             duration-500 ease-in-out
-            bg-gradient-to-br
-            ${Theme? "from-black to-blue-300" : "from-white to-yellow-200"}
+            ${Theme? "bg-black" : "bg-white"}
             opacity-70`}/>
 
             <motion.img

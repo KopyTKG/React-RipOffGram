@@ -3,8 +3,8 @@ import React, {useState} from "react";
 import '../style/lightbox.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-import ImageRow from "./ImageRow";
-import Modal from "./Modal";
+import ImageRow from "./assets/ImageRow";
+import Modal from "./assets/Modal";
 
 const Lightbox = ({Theme}) => {
     const [ImageSrc, setImageSrc] = useState(null);
@@ -33,14 +33,14 @@ const Lightbox = ({Theme}) => {
         ]
     ];
     return(
-        <div>
+        <>
             {/* Website display */}
             <ImageRow Theme={Theme} Images={Images} ImageSrc={ImageSrc} setImageSrc={setImageSrc} />
             {/* Lightbox it self */}
             {ImageSrc && (
                 <Modal Theme={Theme} ImageSrc={ImageSrc} setImageSrc={setImageSrc} />
             )}
-        </div>
+        </>
     );
 
 }

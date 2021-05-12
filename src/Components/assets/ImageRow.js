@@ -11,15 +11,13 @@ const ImageRow = ({Theme, Images, setImageSrc}) => {
                 {Images && Images.map((row, índex) => {
                     return(
                         <div
-                        
-                        className={`
-                            block
-                            flex
-                            flex-col
-                            items-center
-                            justify-center
-                        `}
-                        
+                            className={`
+                                block
+                                w-full
+                                flex
+                                items-center
+                                justify-center
+                            `}
                         >
                             {row.map((image, index2) => {
                                 return(
