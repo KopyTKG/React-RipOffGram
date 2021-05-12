@@ -1,6 +1,6 @@
 import { Switch } from "@headlessui/react";
 
-import "../style/main.css";
+import "../style/main.min.css";
 
  const TestingUI = ({isEnabled, setIsEnabled}) => {
   return ( 
