@@ -24,6 +24,7 @@ all recreated by hand
 
 **Used Packages**
 * React-Bootstrap
+* Bootstrap
 * React-Router
 * Framer-motion
   * used for animations
