@@ -11,9 +11,8 @@ all recreated by hand
 * [github](https://github.com/KopyTKG)
 * [website](https://thekrew.vercel.app/)
 
-#### Released versions
-* [Ver. 1.0.0](https://github.com/KopyTKG/React-RipOffGram/releases/tag/1.0.0)
-<!-- * [Ver. 1.0.1](#1.0.1) -->
+#### Latest releas version
+* [Ver. 1.0.2](#1.0.2)
 
 
 ---
@@ -54,7 +53,7 @@ all included in **package.json**
   * lightbox converted to tasilwindcss
   * Image selection has been updated to 2d array
   * theme selection has been added
-### [*1.0.2*]() **NEW**
+### [*1.0.2*](https://github.com/KopyTKG/React-RipOffGram/releases/tag/1.0.2) **NEW**
   * Navbar added
   * Redirect added to all buttons
   * Settings dropdown menu added
