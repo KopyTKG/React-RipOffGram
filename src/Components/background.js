@@ -2,11 +2,14 @@
 const Background = ({IsEnabled}) => {
     return(
         <>
-            <div
-            className={`main ${IsEnabled? "bg-gray-700" : "bg-gray-200"}`}
-            >
-             &nbsp;
-            </div>
+          {IsEnabled? () => {
+            document.getElementById('root').classList.append("bg-gray-700");
+          }
+          :
+          () => {
+            document.getElementById('root').classList.append("bg-gray-200");
+          }
+          }
         </>
     );
 }

@@ -8,9 +8,10 @@ const ImageRow = ({Theme, Images, setImageSrc}) => {
         <Container>
             <Row>
                 {/* render all imgs */}
-                {Images && Images.map((row, índex) => {
+                {Images && Images.map((row, index) => {
                     return(
                         <div
+                            key={index}
                             className={`
                                 block
                                 w-full
@@ -22,6 +23,7 @@ const ImageRow = ({Theme, Images, setImageSrc}) => {
                             {row.map((image, index2) => {
                                 return(
                                     <motion.div 
+                                        key={index2}
                                         whileHover={{opacity: 1}}  
                                         xs="3" 
                                         className={`m-2`}
@@ -29,12 +31,11 @@ const ImageRow = ({Theme, Images, setImageSrc}) => {
                                         <div onClick={() => {setImageSrc(image.src)}}>
                                             <img 
                                                 src={image.src}
-                                                alt={índex}
+                                                alt="slotImg"
                                                 className={`
                                                 preview
-                                                ${Theme? "border-white": "border-gray-600"}
                                                 border-solid
-                                                border-4
+                                                border-0
                                                 rounded`}
                                             />
                                         </div>
