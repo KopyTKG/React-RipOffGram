@@ -12,7 +12,7 @@ all recreated by hand
 * [website](https://thekrew.vercel.app/)
 
 #### Latest releas version
-* [Ver. 1.0.2](##1.0.2)
+* [Ver. 1.0.2](https://github.com/KopyTKG/React-RipOffGram/releases/tag/1.0.2)
 
 
 ---
