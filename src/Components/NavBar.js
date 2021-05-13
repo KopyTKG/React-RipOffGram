@@ -87,7 +87,7 @@ const Navbar = ({IsEnabled,setIsEnabled, Position}) => {
                         className="w-full h-full"
                         onClick={() => {RedirectTo("/")}}
                     >
-                        {Position == "home"?
+                        {Position === "home"?
                             <HomeFull className="w-full h-full" />  
                             : 
                             <HomeBorder className="w-full h-full" />
@@ -99,7 +99,7 @@ const Navbar = ({IsEnabled,setIsEnabled, Position}) => {
                         className="w-full h-full"
                         onClick={() => {RedirectTo("/direct/inbox/")}}
                     >
-                        {Position == "inbox"?
+                        {Position === "inbox"?
                         <PlaneFull className="w-full h-full" />
                         :
                         <PlaneBorder className="w-full h-full" />
@@ -111,7 +111,7 @@ const Navbar = ({IsEnabled,setIsEnabled, Position}) => {
                         className="w-full h-full"
                         onClick={() => {RedirectTo("/explore/")}}
                     >
-                        {Position == "explore"?
+                        {Position === "explore"?
                         <GlobeFull className="w-full h-full" />
                         :
                         <GlobeBorder className="w-full h-full" />
@@ -123,7 +123,7 @@ const Navbar = ({IsEnabled,setIsEnabled, Position}) => {
                         className="w-full h-full"
                         onClick={() => {RedirectTo("/direct/activity/")}}
                     >
-                        {Position == "activity"?
+                        {Position === "activity"?
                         <HeartFull className="w-full h-full" />
                         :
                         <HeartBorder className="w-full h-full" />

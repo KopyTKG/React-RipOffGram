@@ -2,6 +2,7 @@ import { Menu, Transition } from "@headlessui/react";
 import {Fragment} from "react";
 import { BookmarkIcon, LogoutIcon, UserCircleIcon, UserGroupIcon } from '@heroicons/react/outline';
 import { CogIcon } from "@heroicons/react/solid";
+import Cookies from "js-cookie";
 
  const Settings = ({src, IsEnabled, setIsEnabled}) => {
      const RedirectTo = (path) => {
@@ -108,7 +109,10 @@ import { CogIcon } from "@heroicons/react/solid";
                 </div>
                 <div className="px-1 py-2">
                 <Menu.Item>
-                    <button className="settings-link block flex flex-center justify-center text-black w-3/4 py-1 mx-2">
+                    <button className="settings-link block flex flex-center justify-center text-black w-3/4 py-1 mx-2" onClick={() => {
+                        Cookies.remove("login");
+                        RedirectTo("/");
+                    }}>
                         <div className="w-1/4 flex justify-end mr-3 items-center">
                         <LogoutIcon className="w-6 h-6" />
                         </div>
