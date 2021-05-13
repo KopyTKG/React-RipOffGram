@@ -6,7 +6,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import ImageRow from "./assets/ImageRow";
 import Modal from "./assets/Modal";
 
-const Lightbox = ({Theme}) => {
+const Lightbox = ({Theme, setPosition}) => {
     const [ImageSrc, setImageSrc] = useState(null);
 
     // images can be accest from api call just need to be in this format ( array of json obj with param src: "src")

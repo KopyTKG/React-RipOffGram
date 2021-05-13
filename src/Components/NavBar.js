@@ -13,7 +13,7 @@ import React from "react";
 import Settings from "./assets/settings";
 import Logo from "./svg/logo";
 
-const Navbar = ({IsEnabled,setIsEnabled}) => {
+const Navbar = ({IsEnabled,setIsEnabled, Position}) => {
     const RedirectTo = (path) => {
         window.location.href = path;
     }
@@ -87,10 +87,10 @@ const Navbar = ({IsEnabled,setIsEnabled}) => {
                         className="w-full h-full"
                         onClick={() => {RedirectTo("/")}}
                     >
-                        {IsEnabled?
-                            <HomeBorder className="w-full h-full" />
-                            : 
+                        {Position == "home"?
                             <HomeFull className="w-full h-full" />  
+                            : 
+                            <HomeBorder className="w-full h-full" />
                         }
                     </button>
                 </div>
@@ -99,7 +99,7 @@ const Navbar = ({IsEnabled,setIsEnabled}) => {
                         className="w-full h-full"
                         onClick={() => {RedirectTo("/direct/inbox/")}}
                     >
-                        {IsEnabled?
+                        {Position == "inbox"?
                         <PlaneFull className="w-full h-full" />
                         :
                         <PlaneBorder className="w-full h-full" />
@@ -111,7 +111,7 @@ const Navbar = ({IsEnabled,setIsEnabled}) => {
                         className="w-full h-full"
                         onClick={() => {RedirectTo("/explore/")}}
                     >
-                        {IsEnabled?
+                        {Position == "explore"?
                         <GlobeFull className="w-full h-full" />
                         :
                         <GlobeBorder className="w-full h-full" />
@@ -123,7 +123,7 @@ const Navbar = ({IsEnabled,setIsEnabled}) => {
                         className="w-full h-full"
                         onClick={() => {RedirectTo("/direct/activity/")}}
                     >
-                        {IsEnabled?
+                        {Position == "activity"?
                         <HeartFull className="w-full h-full" />
                         :
                         <HeartBorder className="w-full h-full" />
