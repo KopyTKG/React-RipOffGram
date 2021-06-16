@@ -7,12 +7,13 @@ import {
     Switch,
     Route }
 from "react-router-dom";
-import Background from "./Components/background";
 import Error from "./Components/Error";
 import Placeholder from "./Components/Placeholder";
 import Profile from "./Components/Profile";
 import Cookies from "js-cookie";
+
 import LoginPage from "./Pages/Login";
+import TestingPage from "./Pages/testing";
  
 
 
@@ -59,6 +60,9 @@ const Routes = () => {
                     </Route>
                     <Route path="/swap">
                         <Placeholder setPosition={setPosition} SetTo={"swap"} />
+                    </Route>
+                    <Route path="/playfield">
+                        <TestingPage />
                     </Route>
                     <Route path="/">
                         <Error setPosition={setPosition} />

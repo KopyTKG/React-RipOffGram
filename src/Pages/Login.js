@@ -9,10 +9,8 @@ class LoginPage extends React.Component {
         super(props);
         this.sendLogin = this.sendLogin.bind(this);
     }
-    sendLogin(e) {
-         e.preventDefault();
+    sendLogin() {
         alert("aaa");
-/*
         let userField = document.getElementById("username").value;
         let passField = document.getElementById("password").value;
 
@@ -30,14 +28,18 @@ class LoginPage extends React.Component {
             console.log(res);
             alert("gg");
             Cookies.set("success", res.success);
-        })*/
+        })
     }
     render() 
     {
         return(
             <>
                 <div className="pt-20 pb-3 w-full h-full flex items-center justify-center">
-                    <form onSubmit={() => this.sendLogin} className="block items-center w-80 h-100 py-8 px-8 border-gray-300 border-1" action="#">
+
+                    <form 
+                        onSubmit={this.sendLogin}
+                        className="block items-center w-80 h-100 py-8 px-8 border-gray-300 border-1" 
+                    >
                         <div className="w-full flex justify-center mb-10">
                             <Logo modifier={1.3} />
                         </div>
@@ -53,10 +55,15 @@ class LoginPage extends React.Component {
                             type="password"
                             required={true}
                         />
-                        <button type="submit" className="my-2 w-full btn btn-primary" disabled={false}>
+                        <button 
+                            type="submit" 
+                            className="my-2 w-full btn btn-primary" 
+                            disabled={false}
+                        >
                             Login
                         </button>
                     </form>
+
                 </div>
                 <div className=" w-full h-full flex items-center justify-center">
                     <div className="border-1 border-gray-300 w-80 h-20 flex justify-center py-6">

@@ -2,7 +2,11 @@ import { BadgeCheckIcon } from "@heroicons/react/solid"
 import { Container, Row, Col } from "react-bootstrap"
 import Lightbox from "./Lightbox"
 
+
 const Profile = ({ isEnabled, setPosition}) => {
+    const RedirectTo = (path) => {
+        window.location.href = path;
+    }
     return(
         <>
             {setPosition("home")}
@@ -21,7 +25,7 @@ const Profile = ({ isEnabled, setPosition}) => {
                                 <BadgeCheckIcon className="w-6 h-6 text-blue-600" />
                                 </Col>
                                 <Col xs="3">
-                                    <button className="btn btn-outline-secondary">
+                                    <button className="btn btn-outline-secondary" onClick={() => {RedirectTo("/account/settings")}}>
                                         Edit profile
                                     </button>
                                 </Col>
